@@ -14,7 +14,7 @@ public class SWEA_1873 {
 			int W = sc.nextInt(); // width
 			char[][] map = new char[H][W];
 			int tankX = 0, tankY = 0, dir = 0;
-			// tank X위치 tank Y위치 X,Y방향
+			// 전차의 X위치         Y위치                 X,Y방향
 
 			for (int i = 0; i < H; i++) { // map 입력
 				String str = sc.next();
