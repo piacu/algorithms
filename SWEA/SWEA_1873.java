@@ -16,12 +16,12 @@ public class SWEA_1873 {
 			int tankX = 0, tankY = 0, dir = 0;
 			// tank X위치 tank Y위치 X,Y방향
 
-			for (int i = 0; i < H; i++) {
+			for (int i = 0; i < H; i++) { // map 입력
 				String str = sc.next();
 				for (int j = 0; j < W; j++) {
 					map[i][j] = str.charAt(j);
 					for (int k = 0; k < DIR.length; k++) {
-						if (map[i][j] == DIR[k]) {
+						if (map[i][j] == DIR[k]) { // 전차 X,Y위치 입력 및 방향 입력
 							tankX = i;
 							tankY = j;
 							dir = k;
@@ -40,22 +40,22 @@ public class SWEA_1873 {
 
 			for (int k = 0; k < moveNum; k++) {
 
-				if (move[k] == 'U') dir = 0;
-				else if (move[k] == 'D') dir = 1;
-				else if (move[k] == 'L') dir = 2;
-				else if (move[k] == 'R') dir = 3;
+				if (move[k] == 'U') dir = 0; // U 일때 위 방향
+				else if (move[k] == 'D') dir = 1; // D 일때 아래 방향
+				else if (move[k] == 'L') dir = 2; // L 일때 왼쪽 방향
+				else if (move[k] == 'R') dir = 3; // R 일때 오른쪽 방향
 
 				int nx = tankX + dx[dir];
 				int ny = tankY + dy[dir];
 
-				if (move[k] == 'S') {
+				if (move[k] == 'S') { // Shoot 명령이 들어오면
 					int nxx = nx;
 					int nyy = ny;
-					while (nxx >= 0 && nxx < H && nyy >= 0 && nyy < W) {
-						if (map[nxx][nyy] == '*') {
+					while (nxx >= 0 && nxx < H && nyy >= 0 && nyy < W) { //맵 벗어날 시에 종료
+						if (map[nxx][nyy] == '*') { // 벽돌일 때 부수고 평지로 만듦
 							map[nxx][nyy] = '.';
 							break;
-						} else if (map[nxx][nyy] == '#') {
+						} else if (map[nxx][nyy] == '#') { // 강철일 때는 아무 일도 없음
 							break;
 						}
 						nxx += dx[dir];
@@ -63,14 +63,14 @@ public class SWEA_1873 {
 					}
 
 				} else if (nx >= 0 && nx < H && ny >= 0 && ny < W) {
-					if(map[nx][ny] == '.'){
+					if(map[nx][ny] == '.'){ // 전차 이동 시키고 전차가 있던 자리는 평지로 변경
 						map[tankX][tankY] = '.';
 						tankX = nx;
 						tankY = ny;
 					}
 				}
 
-				map[tankX][tankY] = DIR[dir];
+				map[tankX][tankY] = DIR[dir]; // 맵에 전차 아이콘 표시
 
 			}
 
