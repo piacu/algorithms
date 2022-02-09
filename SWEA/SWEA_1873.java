@@ -70,7 +70,7 @@ public class SWEA_1873 {
 					}
 				}
 
-				map[tankX][tankY] = DIR[dir]; //맵에 전차 아이콘 표시
+				map[tankX][tankY] = DIR[dir]; // 맵에 전차 아이콘 표시
 
 			}
 
