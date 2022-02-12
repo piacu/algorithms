@@ -5,7 +5,7 @@ import java.util.Scanner;
  */
 public class SWEA_4615 {
 	public static void main(String[] args) throws Exception {
-		System.setIn(new FileInputStream("./src/algorithm/input_SWEA4615.txt"));
+		System.setIn(new FileInputStream("input_SWEA4615.txt"));
 		Scanner sc = new Scanner(System.in);
 		int T = sc.nextInt();
 
