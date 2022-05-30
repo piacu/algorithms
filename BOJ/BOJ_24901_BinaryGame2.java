@@ -2,7 +2,7 @@ package 구데기컵;
 
 import java.util.Scanner;
 
-public class BinaryGame {
+public class BOJ_24901_BinaryGame2 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
