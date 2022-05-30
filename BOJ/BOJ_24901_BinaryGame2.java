@@ -1,5 +1,3 @@
-package 구데기컵;
-
 import java.util.Scanner;
 
 public class BOJ_24901_BinaryGame2 {
