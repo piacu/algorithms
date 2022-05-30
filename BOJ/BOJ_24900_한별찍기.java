@@ -1,5 +1,3 @@
-package 구데기컵;
-
 public class BOJ_24900_한별찍기{
     public static void main(String[] args){
 
