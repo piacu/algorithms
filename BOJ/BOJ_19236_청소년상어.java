@@ -19,18 +19,16 @@ class State implements Comparable<State>{
 		this.num = num;
 		this.dir = dir;
 	}
-
 	@Override
 	public int compareTo(State o) {
 		return this.num - o.num;
 	}
-
 	@Override
 	public String toString() {
 		return "State [r=" + r + ", c=" + c + ", num=" + num + ", dir=" + dir + "]";
 	}
-	
 }
+
 public class BOJ_19236_청소년상어 {
 	static List<State> list;
 	static int[][] drc = {{0,0},{-1,0},{-1,-1},{0,-1},{1,-1},{1,0},{1,1},{0,1},{-1,1}}; // null, ↑, ↖, ←, ↙, ↓, ↘, →, ↗
@@ -47,42 +45,27 @@ public class BOJ_19236_청소년상어 {
 			}
 		}
 		
-		list.get(0).num = 0; // 상어로 초기화
+		list.get(0).num = 99; // 상어로 초기화
 		Collections.sort(list); // 리스트 정렬
 		
-		for (State state : list) {
-			System.out.println(state.toString());
-		}
+		for (State state : list) System.out.println(state.toString());
 		
+		moveShark(list.get(1));
 		
 	}
 
-	private static void dfs(State s) {
+	private static void moveShark(State s) {
+		
 		
 		moveFish();
 	}
 
 	private static void moveFish() {
-		int currentFish = 0;
 		
-		while(currentFish <= 16) {
-//			for (int i = 0; i < map.length; i++) {
-//				for (int j = 0; j < map.length; j++) {
-//					if(map[i][j].num == currentFish) {
-//						int mr = i + drc[map[i][j].dir][0];
-//						int mc = j + drc[map[i][j].dir][1];
-//						
-//						if(mr > 0 && mr < map.length && mc > 0 && mc < map.length && map[mr][mc].num != 0) {
-//							State tmp = map[i][j];
-//							map[i][j] = map[mr][mc];
-//							map[mr][mc] = tmp;
-//						}
-//						
-//					}
-//				}
-//			}
-			currentFish++;
-		}
+		
+//		while(currentFish <= 16) {
+//			State now = list.get(number);
+//		}
 		
 	}
 }
