@@ -34,7 +34,7 @@ public class BOJ_19236_청소년상어 {
 	static int[][] drc = {{0,0},{-1,0},{-1,-1},{0,-1},{1,-1},{1,0},{1,1},{0,1},{-1,1}}; // null, ↑, ↖, ←, ↙, ↓, ↘, →, ↗
 	public static void main(String[] args) throws IOException {
 		BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
-		list = new ArrayList<>();
+		list = new ArrayList<>(); 
 		
 		for (int i = 0; i < 4; i++) {
 			StringTokenizer st = new StringTokenizer(bf.readLine());
