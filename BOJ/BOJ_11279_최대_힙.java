@@ -23,7 +23,6 @@ public class BOJ_11279_최대_힙 {
 				q.add(num);
 			}
 		}
-		
 		System.out.println(sb);
 	}
 }
