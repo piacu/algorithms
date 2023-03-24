@@ -2,7 +2,6 @@
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="src" path="미분류"/>
-	<classpathentry kind="src" path="미분류2"/>
 	<classpathentry kind="src" path="BOJ"/>
 	<classpathentry kind="src" path="Programmers"/>
 	<classpathentry kind="src" path="SWEA"/>
