@@ -1,5 +1,3 @@
-
-
 import java.util.Scanner;
 
 public class BOJ_1149_RGB거리 {
@@ -10,7 +8,6 @@ public class BOJ_1149_RGB거리 {
 		int N = sc.nextInt();
 		int RGB[][] = new int[N+1][3];
 		int dp[][] = new int[N+1][3];
-		int res = 0;
 
 		for (int i = 1; i <= N; i++) {
 			RGB[i][0] = sc.nextInt();
@@ -25,5 +22,7 @@ public class BOJ_1149_RGB거리 {
 		}
 		
 		System.out.println(Math.min(dp[N][0], Math.min(dp[N][1], dp[N][2])));
+		
+		sc.close();
 	}
 }

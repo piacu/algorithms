@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class BOJ_10026 {
+public class BOJ_10026_적록색약 {
 	static char[][] map;
 	static boolean[][] v;
 	static boolean[][] v2;

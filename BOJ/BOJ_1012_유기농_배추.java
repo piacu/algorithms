@@ -1,10 +1,8 @@
-
-
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class BOJ_1012 {
+public class BOJ_1012_유기농_배추 {
 	static int[][] map;
 	static int[] dr = {0, 1, 0, -1}; // 우 하 좌 상
 	static int[] dc = {1, 0, -1, 0};

@@ -6,7 +6,7 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.StringTokenizer;
 
-public class BOJ_17276_배열돌리기 {
+public class BOJ_17276_배열_돌리기 {
 	static int[][] array;
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
